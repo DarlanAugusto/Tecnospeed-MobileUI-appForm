@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
     <link rel="stylesheet" type="text/css" href="mobileui/style.css">
         <meta name="format-detection" content="telephone=no">
         <meta charset="utf-8">
@@ -10,10 +11,77 @@
         <title>Apache Cordova</title>
     </head>
     <body>
+      <!-- Header -->
+      <div class="header purple">
+        <button class="left icon ion-navicon"></button>
+        <h1>Cadastro de Usuário</h1>
+      </div>
 
+      <div class="content has-header padding">
+        <div class="list radius-big margin-top">
+          <div class="item icon ion-person">
+            <input type="text" name="name" id="name" placeholder="Nome">
+          </div>
+
+          <div class="item icon ion-at">
+            <input type="email" name="email" id="email" placeholder="Email">
+          </div>
+
+          <div class="item">
+            <h1>Escolha uma Skill</h1>
+            <div class="margin-top">
+              <div>
+                <input type="radio" name="skill" id="react" class="cyan">
+                <label for="react">ReactJS</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="skill" id="node" class="cyan">
+                <label for="node">Node.js</label>
+              </div>
+                
+              <div>
+                <input type="radio" name="skill" id="graphql" class="cyan">
+                <label for="graphql">GraphQL</label>
+              </div>
+                
+            </div>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" name="checkLembrarDepois" id="checkLembrarDepois" class="purple switch">
+            <label for="checkLembrarDepois">Lembrar Depois</label>
+          </div>
+
+          <div class="item range">
+            <div class="left">
+              <i class="icon ion-ios-volume-low icon-big purple"></i>
+            </div>
+
+            <input type="range" name="" id="" min="0" max="100" value="32">
+            
+            <div class="right">
+              <i class="icon ion-ios-volume-high icon-big purple"></i>
+            </div>
+          </div>
+
+          <div class="item align-center">
+            <button class="purple radius-big full">
+              Cadastrar
+            </button>
+          </div>
+        </div>
+
+        <div class="list radius-big margin-top">
+          <div class="item icon ion-search">
+            <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+          </div>
+        </div>
+        
+      </div>
       
       <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="mobileui/mobileui.js"></script>
       <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
